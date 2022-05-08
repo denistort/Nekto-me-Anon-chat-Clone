@@ -1,0 +1,23 @@
+.button-start-chatting {
+	background: transparent;
+  border-radius: 50px;
+	color: #6ac065;
+  font-weight: bolder;
+	width: 300px;
+	min-height: 60px;
+	font-size: 16px;
+	outline: none;
+	cursor: pointer;
+	border: 3px solid #6ac065;
+}
+
+.button-start-chatting:hover {
+	color: #438a3f;
+	border: 3px solid #438a3f;
+}
+
+.button-start-chatting:disabled {
+	color: #8a8a8a;
+	border: 3px solid #8a8a8a;
+	cursor: not-allowed;
+}

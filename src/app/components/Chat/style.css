@@ -1,0 +1,242 @@
+:root {
+	--night-text-color: #e2e3e7;
+	--night-background-color: #101417;
+	--night-link-color: #70a9ec;
+	--night-checkbox-background-color: #c1c8d0;
+	--night-active-checkbox-background-color: #3c6286;
+	--night-disabled-checkbox-background-color: #575c61;
+	--night-active-checkbox-adult-background-color: #ce5648;
+	--night-active-checkbox-roles-background-color: #5214bf;
+	--night-checkbox-border-color: #605c5c;
+	--night-active-checkbox-border-color: #416d97;
+	--night-disabled-checkbox-border-color: #474343;
+	--night-button-scan-color: #3bb93b;
+	--night-button-stop-color: #70a9ec;
+	--night-button-stop-talk-color: #3bb93b;
+	--night-button-continue-color: #ff9f00;
+	--night-modal-background: #333d46;
+	/* --night-icon-change-params: url(/template/assets/night_theme/audio/images/ic_menu_white_48dpn.png);
+	--night-icon-complain: url(/template/assets/night_theme/audio/images/ezgif.png);
+	--night-icon-loading: url(/template/assets/night_theme/audio/images/loading.gif?test);
+	--night-body-background: url(/template/assets/night_theme/audio/images/bgn.png); */
+	--night-header-background-color: #1b1e23;
+	--night-header-text-color: #4d657f;
+	--night-header-border-color: #343e48;
+	--night-header-adult-background-color: #361f19;
+	--night-header-roles-background-color: #241d31;
+	--night-active-talk-color: #3c6286;
+	--night-active-talk-status-messages-color: #52626f;
+	--night-danger-color: #cc1212;
+	--night-stop-talk-confirm-background: #333d46;
+	--night-chat-line-color: #343e48;
+	--night-chat-messages-nekto-color: #fafafa;
+	--night-chat-messages-nekto-background: #1d2124;
+	--night-chat-messages-nekto-border-color: #15191c;
+	--night-chat-messages-self-color: #e2e3e7;
+	--night-chat-messages-self-background: #333d46;
+	--night-chat-messages-self-border-color: #23282c;
+	--night-chat-message-time-color: #6e757b;
+	--night-chat-unread-message-background: #4e5c67;
+	--night-chat-messages-adult-background: #36211c;
+	--night-chat-messages-adult-border-color: #291612;
+	--night-chat-messages-adult-color: #8f7672;
+	--night-chat-messages-roles-background: #241d31;
+	--night-chat-messages-roles-border-color: #171031;
+	--night-chat-messages-roles-color: #006ebd;
+	--night-chat-message-area-wrapper-background: #1b1e23;
+	--night-chat-message-area-background: #333d46;
+	--night-chat-message-area-color: #a2a8ac;
+	--night-chat-message-border-color: #343e48;
+	--night-button-send-message-color: #3bb93b;
+	--night-button-new-chat-color: #3bb93b;
+	--night-button-change-params-color: #70a9ec;
+	--night-complain-link: #5f7582;
+	/* --night-chat-smile-icon: url(/template/assets/night_theme/images/smile2.png); */
+}
+
+
+.chat-box {
+	width: 700px;
+	height: 100%;
+	background-color: #101417;
+}
+
+.message-form {
+	width: 100%;
+	height: 100%;
+	padding: 1rem 2.5rem;
+	background-color: #1b1e23;
+	position: relative;
+	display: flex;
+}
+
+.text-area {
+	resize: none;
+	background-color: transparent;
+	height: 95px;
+	width: 100%;
+	padding: 0.5rem;
+	color: rgb(202, 202, 202);
+	border: none;
+	outline: none;
+	font-size: 14px;
+}
+
+.message-wrapper {
+	border-radius: 10px;
+	background-color: #283138;
+	height: 150px;
+	padding: 0.5rem;
+	width: 90%;
+	position: relative;
+}
+
+.input-started {
+	padding: 1rem;
+	background-color: transparent;
+	color: green;
+	outline: none;
+	border: 2px solid green;
+	margin-bottom: 10px;
+	font-size: 14px;
+	width: 300px;
+	border-radius: 10px;
+}
+
+.input-started::placeholder {
+	color: green;
+}
+
+.button-send {
+	background-color: transparent;
+	padding: 0.5rem;
+	border-radius: 20px;
+	cursor: pointer;
+	color: rgb(0, 117, 0);
+	border: 2px solid rgb(0, 117, 0);
+}
+
+.button-send:hover {
+	border: 2px solid green;
+	color: green;
+}
+
+.button-send:disabled {
+	cursor: not-allowed;
+}
+
+.button-wrapper {
+	text-align: right;
+}
+
+.message-board {
+	display: flex;
+	height: 65%;
+	/* flex: 1; */
+	padding: 1.5rem;
+	flex-direction: column-reverse;
+	gap: .5rem;
+	font-size: 14px;
+	overflow-y: auto;
+	position: relative;
+}
+.message-board::-webkit-scrollbar {
+  width: 7px;
+  background-color: #f9f9fd;
+}
+
+.message-board::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #18aaaa;
+}
+
+.message-board::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  background-color: #f9f9fd;
+}
+.text {
+	word-break: break-all;
+}
+
+.message-from-you {
+	justify-content: flex-end;
+}
+
+.message_wrap {
+	display: flex;
+	align-items: center;
+}
+
+.message-from-not-you {
+	justify-content: flex-start;
+}
+
+.user-connected {
+	text-align: center;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 30px;
+}
+.line {
+	width: 30%;
+	border: none;
+	background-color: #343e48;
+	height: 1px;
+}
+.user-typing {
+	display: block;
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	transform: translate(-50%, 0%);
+	color: white;
+}
+
+.conversation-ended {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	font-size: 16px;
+	font-weight: 600;
+	color: #c1c8d0;
+	height: 150px;
+
+}
+.conversation-ended__buttons {
+	margin-top: 20px;
+	display: flex;
+	gap: 20px;
+}
+
+.form-cirlce {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	position: relative;
+	background-image: url('../../../assets/img/avaYou.svg');
+	background-size: cover;
+	right: 0;
+	top: 0;
+	margin-left: 20px;
+}
+
+.emoji-toggle-button {
+	width: 40px;
+	height: 40px;
+	border-radius: 10px;
+	transition: background-color 0.5s ease;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.emoji-toggle-button:hover {
+	background-color: rgba(0, 0, 0, 0.5);
+}

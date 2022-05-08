@@ -1,0 +1,25 @@
+.button-send {
+	background-color: transparent;
+	padding: 0.5rem;
+	border-radius: 20px;
+	cursor: pointer;
+	color: rgb(0, 117, 0);
+	border: 2px solid rgb(0, 117, 0);
+}
+
+.button-send:hover {
+	border: 2px solid green;
+	color: green;
+}
+
+.button-send:disabled {
+	cursor: not-allowed;
+	color: rgb(141, 141, 141);
+	border: 2px solid rgb(141, 141, 141);
+}
+
+.button-send:disabled:hover {
+	cursor: not-allowed;
+	color: rgb(141, 141, 141);
+	border: 2px solid rgb(141, 141, 141);
+}

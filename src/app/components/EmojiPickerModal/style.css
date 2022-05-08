@@ -1,0 +1,17 @@
+.emoji-modal-window {
+    position: absolute;
+    width: 150px;
+    height: 300px;
+    transition: opacity .3s ease, visibility 0.3s ease, transform 0.3s ease;
+    top: -320px;
+    right: 5%;
+}
+.emoji-modal-window-open {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(-10px);
+}
+.emoji-modal-window-not-open {
+    visibility: hidden;
+    opacity: 0;
+}

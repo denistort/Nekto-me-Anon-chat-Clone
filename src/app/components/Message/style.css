@@ -1,0 +1,198 @@
+
+
+.chat-box {
+	width: 600px;
+	height: 100%;
+	background-color: #101417;
+}
+
+.message-form {
+	width: 100%;
+	height: 100%;
+	padding: 1rem 2.5rem;
+	background-color: #1c1c1c;
+}
+
+.text-area {
+	resize: none;
+	background-color: transparent;
+	height: 95px;
+	width: 100%;
+	padding: 0.5rem;
+	color: rgb(202, 202, 202);
+	border: none;
+	outline: none;
+	font-size: 32px;
+}
+
+.message-wrapper {
+	border-radius: 10px;
+	background-color: rgb(61, 61, 61);
+	height: 150px;
+	padding: 0.5rem;
+	transition: background 0.5s ease;
+}
+
+.button-send {
+	background-color: transparent;
+	padding: 0.5rem;
+	border-radius: 20px;
+	cursor: pointer;
+	color: rgb(0, 117, 0);
+	border: 2px solid rgb(0, 117, 0);
+}
+
+.message-not-readed {
+	background-color: #4e5c67;
+}
+
+.button-send:hover {
+	border: 2px solid green;
+	color: green;
+}
+
+.button-wrapper {
+	text-align: right;
+}
+
+
+.message {
+	height: fit-content;
+	width: fit-content;
+	padding: 0.5rem;
+	border-radius: 10px;
+	display: flex;
+	position: relative;
+	max-width: 40%;
+}
+
+.message_your {
+	background-color: #333d46;
+	color: #fafafa;;
+	border: 1px solid #23282c;
+}
+.message_not_your {
+	background-color: #1d2124;
+	color: #fafafa;;
+	border: 1px solid #23282c;
+}
+.message_your:after {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: auto;
+  right: -8px;
+  top: 9px;
+  bottom: auto;
+  border: 4px solid;
+  border-color: #333d46 transparent transparent #333d46;
+}
+.message_your:before {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: auto;
+  right: -11px;
+  top: 8px;
+  bottom: auto;
+  border: 5px solid;
+  border-color: #333d46 transparent transparent #333d46;
+}
+
+.message_not_your::before {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 8px;
+  left: -11px;
+  right: auto;
+  bottom: auto;
+  border: 5px solid;
+  border-color: #1d2124 #1d2124 transparent transparent;
+}
+.message_not_your::after {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 9px;
+  left: -8px;
+  right: auto;
+  bottom: auto;
+  border: 4px solid;
+  border-color: #1d2124 #1d2124 transparent transparent;
+}
+
+.message-from-you {
+	justify-content: flex-end;
+}
+
+.message_wrap {
+	display: flex;
+	align-items: center;
+}
+
+.message-from-not-you {
+	justify-content: flex-start;
+}
+
+
+.nick {
+	font-weight: 600;
+	margin-right: 10px;
+}
+
+.text {
+	color: #e2e3e7;
+	font-weight: 500;
+	font-size: 14px;
+	letter-spacing: .3px;
+}
+
+.message-date {
+	position: absolute;
+	font-size: 8px;
+	bottom: 3px;
+	right: 8px;
+	color: #6e757b;
+}
+.cirlce {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 900;
+}
+.cirlce-you {
+	background-image: url('../../../assets/img/avaYou.svg');
+	background-size: cover;
+	margin-left: 15px;
+}
+.cirlce-anybody {
+	background-image: url('../../../assets/img/avaNeznakomev.svg');
+	background-size: cover;
+	margin-right: 15px;
+}
+
+.message-date-your {
+	margin-right: 10px;
+	color: #6e757b;
+	font-size: 12px;
+	font-weight: 600;
+}
+
+.message-date-not-your {
+	margin-left: 10px;
+	color: #6e757b;
+	font-size: 12px;
+	font-weight: 600;
+}
+.emoji {
+	width: 32px;
+	height: 32px;
+}
